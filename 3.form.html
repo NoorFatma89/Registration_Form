@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>form</title>
+    <style>
+        table {
+            color: white;
+            border-radius: 20px;
+        }
+
+        #button1 {
+            background-color: darkgreen;
+            color: white;
+            height: 32px;
+            width: 85px;
+            border-radius: 25px;
+        }
+
+        #button2 {
+            background-color: darkblue;
+            color: white;
+            height: 32px;
+            width: 85px;
+            border-radius: 25px;
+        }
+
+        #reg {
+            padding: 10px;
+            font-size: 28px;
+            text-align: center;
+        }
+
+        body {
+            background: lightgray;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="4.success.html">
+        <b>
+            <p id="reg">REGISTRATION FORM</p>
+        </b>
+        <table bgcolor="black" align="center" cellspacing="30">
+            <tr>
+                <td>First Name:</td>
+                <td><input type="text" placeholder="First Name" size="20" required></td>
+            </tr>
+            <tr>
+                <td>Middle Name:</td>
+                <td><input type="text" placeholder="Middle Name" size="20" required></td>
+            </tr>
+            <tr>
+                <td>Last Name:</td>
+                <td><input id="f3" type="text" placeholder="Last Name" size="20" required></td>
+            </tr>
+            <tr>
+                <td>Gender:</td>
+                <td>
+                    <input type="radio" name="Gender" required>Male
+                    <input type="radio" name="Gender" required>Female
+                </td>
+            </tr>
+            <tr>
+                <td>Date Of Birth:</td>
+                <td><input type="date" id="send" oninput="result.value=send.value" size="20" required></td>
+            </tr>
+            <tr>
+                <td>Mobile Number:</td>
+                <td><input type="number" placeholder="Mobile Number" required></td>
+            </tr>
+            <td colspan="2" align="center"><input type="Submit" id="button1"> <input type="reset" value="reset"
+                    id="button2"></td>
+        </table>
+    </form>
+</body>
+
+</html>
